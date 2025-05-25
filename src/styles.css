@@ -1,0 +1,190 @@
+/* styles.css */
+html, body {
+    height: 100%;
+  }
+  
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+.left{
+    width: 40%;
+    background-color:#7c583d;
+    height: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.logo{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.left .logo h2{
+    font-style: oblique;
+
+}
+.left .project {
+    display: flex;
+    justify-content: space-around;
+}
+.left .project h3{
+    margin-top: 5px;
+    font-style: italic;
+}
+.left .project button{
+    margin-top: 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+}
+#addproject{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #7c583d;
+    background-color: beige;
+}
+#addproject:hover{
+    background-color: #d1aa8c;
+    color: #3d3838;
+}
+.left .tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.tasks div{
+    padding: 5px 10px;
+    border: solid 1px black;
+    border-radius: 8px;
+    color: beige;
+}
+.delDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.delBtn{
+    padding: 5px 10px ;
+    background-color: rgb(179, 91, 91);
+    border: solid 1px white;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* form */
+.dis{
+    display: flex;
+}
+
+form{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    display: none;
+    flex-direction: column;
+    padding: 50px 40px;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+form input{
+    width: 300px;
+    height: 25px;
+}
+
+#description {
+    height: 70px;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 5px;
+    line-height: 1.2;
+    width: 300px;
+  }
+  
+  
+
+form button{
+    text-align: center;
+    width: 70px;
+    margin-left: 11vw;
+    text-align: center;
+    padding: 13px 0px;
+    border-radius: 5px;
+}
+/* right */
+.right{
+    display: flex;
+    flex-direction: column;
+}
+ .head{
+    padding: 12px 20px ;
+    font-weight: 700;
+    font-style: oblique;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-between;
+}
+.tasksright{
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cards{
+    padding: 40px 40px;
+
+}
+.card{
+    padding: 15px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+    width: 25vw;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+.card h4{
+   text-align: center; 
+}
+.card p{
+    text-align: center; 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right{
+    width: 60%;
+    background-color: #F5F5DC;
+    height: 100%;
+ }
