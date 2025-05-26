@@ -1,3 +1,6 @@
+import { setActiveProject, activeProject } from "./index.js";
+import { filterCardsByProject } from "./addtodo.js";
+
 
 const addProject = document.querySelector(".tasks")
 
@@ -36,11 +39,14 @@ divEl.classList.add("delDiv")
 delBtn.classList.add("delBtn")
 arr.push(name)
 delBtn.addEventListener("click",(e)=>{
-    console.log(this.divEl);
-    
 divEl.remove()
-    
 })
+divEl.addEventListener("click", () => {
+    setActiveProject(name);
+    document.querySelector(".head h1").innerText = name; // update top right heading
+    filterCardsByProject(name); // show only related tasks
+  });
+  
 
 }
 
