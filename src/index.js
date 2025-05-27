@@ -2,10 +2,6 @@ import "./styles.css"
 import { projectHandle } from "./addproject"
 import { task,formDetail } from "./addtodo"
 
-export let activeProject = null;
-export function setActiveProject(name) {
-  activeProject = name;
-}
 
 
 // Project Logic

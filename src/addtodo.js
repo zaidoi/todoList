@@ -1,4 +1,4 @@
-import { activeProject } from "./index.js";
+
 
 
 export function task(btn){
@@ -72,12 +72,5 @@ function cardMake(title, description, duedate) {
     cards.appendChild(card);
   }
 
-  export function filterCardsByProject(projectName) {
-    const allCards = document.querySelectorAll(".card");
-    allCards.forEach(card => {
-      const cardProject = card.getAttribute("data-project");
-      card.style.display = (cardProject === projectName) ? "block" : "none";
-    });
-  }
   
   
