@@ -24,15 +24,12 @@ formSee.classList.toggle("dis");
 }
 
 function cardMake(title, description, duedate) {
-  if (!activeProject) {
-    alert("Please select a project first!");
-    return;
-  }
+
 
     const cards = document.querySelector(".cards");
     const card = document.createElement("div");
     card.classList.add("card");
-    card.setAttribute("data-project", activeProject);
+  
   
     const titleHead = document.createElement("h4");
     titleHead.innerHTML = "Title:";
