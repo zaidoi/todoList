@@ -98,11 +98,28 @@ form {
   border-bottom: 1px solid currentColor;
   font-size: inherit;
   outline: none;
+  padding: 0.25em;
   -webkit-transition: border-bottom 150ms ease-in;
   transition: border-bottom 150ms ease-in;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.new::-webkit-input-placeholder {
+  opacity: 0.4;
+}
+
+.new:-ms-input-placeholder {
+  opacity: 0.4;
+}
+
+.new::-ms-input-placeholder {
+  opacity: 0.4;
+}
+
+.new::placeholder {
+  opacity: 0.4;
 }
 
 .new:focus {
