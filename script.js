@@ -112,7 +112,7 @@ function renderTasks(selectedList) {
     tasksContainer.appendChild(taskElement)
   })
 }
-
+// unnecessary comment
 function renderTaskCount(selectedList) {
   const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
   const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
